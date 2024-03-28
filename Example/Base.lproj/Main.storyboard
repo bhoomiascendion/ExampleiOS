@@ -16,16 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4r-ds-ucH">
-                                <rect key="frame" x="26" y="416" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4r-ds-ucH">
+                                <rect key="frame" x="174.66666666666666" y="169" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hs3-AD-vAT">
+                                <rect key="frame" x="10" y="59" width="373" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNO-rR-Cgn">
+                                <rect key="frame" x="10" y="114" width="373" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Say Hello"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q4r-ds-ucH" firstAttribute="top" secondItem="kNO-rR-Cgn" secondAttribute="bottom" constant="20" id="00D-Mo-Vc2"/>
+                            <constraint firstItem="kNO-rR-Cgn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="4mz-1n-Oge"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kNO-rR-Cgn" secondAttribute="trailing" constant="10" id="5IX-ha-Ezi"/>
+                            <constraint firstItem="hs3-AD-vAT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BwA-j3-kmm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hs3-AD-vAT" secondAttribute="trailing" constant="10" id="X9i-T3-dxw"/>
+                            <constraint firstItem="Q4r-ds-ucH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bhL-b8-qpV"/>
+                            <constraint firstItem="kNO-rR-Cgn" firstAttribute="top" secondItem="hs3-AD-vAT" secondAttribute="bottom" constant="21" id="d9p-rB-vla"/>
+                            <constraint firstItem="hs3-AD-vAT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="nos-et-cmC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
